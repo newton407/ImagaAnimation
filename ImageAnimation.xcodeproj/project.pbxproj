@@ -21,6 +21,8 @@
 		EDF12EB1196ACB3300C8791A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF12E93196ACB3300C8791A /* UIKit.framework */; };
 		EDF12EB9196ACB3300C8791A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EDF12EB7196ACB3300C8791A /* InfoPlist.strings */; };
 		EDF12EBB196ACB3300C8791A /* ImageAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF12EBA196ACB3300C8791A /* ImageAnimationTests.m */; };
+		EDF12EC5196ACD4E00C8791A /* jay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDF12EC4196ACD4E00C8791A /* jay.jpg */; };
+		EDF12EC7196ACE1100C8791A /* newton.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EDF12EC6196ACE1100C8791A /* newton.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		EDF12EB6196ACB3300C8791A /* ImageAnimationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ImageAnimationTests-Info.plist"; sourceTree = "<group>"; };
 		EDF12EB8196ACB3300C8791A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EDF12EBA196ACB3300C8791A /* ImageAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageAnimationTests.m; sourceTree = "<group>"; };
+		EDF12EC4196ACD4E00C8791A /* jay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jay.jpg; path = ../../../../Pictures/jay.jpg; sourceTree = "<group>"; };
+		EDF12EC6196ACE1100C8791A /* newton.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = newton.JPG; path = ../../../../Desktop/newton.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 		EDF12E95196ACB3300C8791A /* ImageAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				EDF12EC6196ACE1100C8791A /* newton.JPG */,
+				EDF12EC4196ACD4E00C8791A /* jay.jpg */,
 				EDF12E9E196ACB3300C8791A /* AppDelegate.h */,
 				EDF12E9F196ACB3300C8791A /* AppDelegate.m */,
 				EDF12EA1196ACB3300C8791A /* Main.storyboard */,
@@ -228,8 +234,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDF12EC7196ACE1100C8791A /* newton.JPG in Resources */,
 				EDF12EA8196ACB3300C8791A /* Images.xcassets in Resources */,
 				EDF12E9A196ACB3300C8791A /* InfoPlist.strings in Resources */,
+				EDF12EC5196ACD4E00C8791A /* jay.jpg in Resources */,
 				EDF12EA3196ACB3300C8791A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *ImageMove;
+@property (weak, nonatomic) IBOutlet UIImageView *ImageMove2;
+- (IBAction)OnClickMove:(id)sender;
+- (IBAction)OnClickAnimate:(id)sender;
 
 @end
