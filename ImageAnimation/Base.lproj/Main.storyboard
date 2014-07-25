@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,15 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="esO-H4-ceA">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="esO-H4-ceA">
                                 <rect key="frame" x="9" y="42" width="145" height="145"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="HyZ-ul-3L1"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Gg-l5-ln1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Gg-l5-ln1">
                                 <rect key="frame" x="166" y="300" width="145" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ym6-p2-xJ3">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ym6-p2-xJ3">
                                 <rect key="frame" x="28" y="442" width="107" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Move Up/Down">
@@ -34,7 +38,7 @@
                                     <action selector="OnClickMove:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Oxx-Sg-FCj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jO7-MX-ha5">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jO7-MX-ha5">
                                 <rect key="frame" x="210" y="442" width="57" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Animate">
@@ -46,6 +50,21 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jO7-MX-ha5" firstAttribute="baseline" secondItem="Ym6-p2-xJ3" secondAttribute="baseline" id="3Jm-p5-HYa"/>
+                            <constraint firstItem="Ym6-p2-xJ3" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="height" multiplier="107:568" id="5cO-OM-Lhg"/>
+                            <constraint firstItem="esO-H4-ceA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="9" id="6DO-Il-rUY"/>
+                            <constraint firstItem="esO-H4-ceA" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="22" id="7Qb-RO-M8M"/>
+                            <constraint firstItem="0Gg-l5-ln1" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="280" id="Kjj-GV-nqD"/>
+                            <constraint firstItem="jO7-MX-ha5" firstAttribute="leading" secondItem="Ym6-p2-xJ3" secondAttribute="trailing" constant="75" id="R4f-P8-Nkh"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="0Gg-l5-ln1" secondAttribute="bottom" constant="123" id="WXx-71-EfO"/>
+                            <constraint firstItem="esO-H4-ceA" firstAttribute="centerX" secondItem="Ym6-p2-xJ3" secondAttribute="centerX" id="XwN-vp-vnW"/>
+                            <constraint firstItem="jO7-MX-ha5" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="height" multiplier="57:568" id="bsZ-UK-E8f"/>
+                            <constraint firstItem="0Gg-l5-ln1" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="height" multiplier="145:568" id="eZW-OU-hoj"/>
+                            <constraint firstAttribute="width" secondItem="esO-H4-ceA" secondAttribute="height" multiplier="64:29" id="nnG-i7-nUX"/>
+                            <constraint firstItem="jO7-MX-ha5" firstAttribute="centerX" secondItem="0Gg-l5-ln1" secondAttribute="centerX" id="vrw-cR-4fw"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="jO7-MX-ha5" secondAttribute="bottom" constant="96" id="ypM-Yj-56p"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="ImageMove" destination="esO-H4-ceA" id="Spb-jp-03e"/>
